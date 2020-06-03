@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<style>
+    canvas{
+        width: 1000px;
+        background-color: transparent;
+        height: 500px;
+    }
+    button{
+        height: 40px;
+        width: 90px;
+    }
+</style>
+<body onload="startGame()" background="D:\ko.png" widht="700px">
+<div style="text-align:center;width:480px;">
+  <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+  <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+  <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+  <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+</div>
+<script src="d:\movingimg\move.js"></script>
+</body>
+</html>
